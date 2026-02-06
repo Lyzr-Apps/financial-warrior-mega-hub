@@ -1,0 +1,93 @@
+{
+  "agent_name": "Advisor Agent",
+  "agent_id": "6985a434e2c0086a4fc43bd5",
+  "agent_purpose": "financial_advice",
+  "description": "Conversational financial guidance for SIPs, insurance, and risk allocation",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "advice_type": "string",
+      "primary_recommendation": "string",
+      "clarifying_questions": [
+        "string"
+      ],
+      "personalized_suggestions": {
+        "recommended_amount": "string",
+        "rationale": "string",
+        "alternatives": [
+          "string"
+        ]
+      },
+      "risk_assessment": "string",
+      "next_steps": [
+        "string"
+      ]
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "advice_type": "sip_recommendation",
+      "primary_recommendation": "Based on your \u20b940,000 monthly surplus and moderate risk tolerance, a recommended SIP amount would be around \u20b912,000 to \u20b916,000 per month.",
+      "clarifying_questions": [
+        "What are your specific financial goals or timelines for these investments?",
+        "Do you have any existing investments or savings that should be considered?"
+      ],
+      "personalized_suggestions": {
+        "recommended_amount": "\u20b912,000 to \u20b916,000",
+        "rationale": "This range utilizes 30% to 40% of your surplus, balancing savings and opportunities for growth while managing risk.",
+        "alternatives": [
+          "Consider allocating a portion towards conservative debt funds for stability.",
+          "If you foresee large expenses, you might retain more in liquid assets."
+        ]
+      },
+      "risk_assessment": "medium",
+      "next_steps": [
+        "Set up a SIP account with a trusted brokerage or financial institution.",
+        "Review and adjust your SIP periodically in line with financial goals or life changes.",
+        "Monitor the performance regularly to ensure alignment with risk tolerance and goals."
+      ]
+    },
+    "metadata": {
+      "agent_name": "Advisor Agent",
+      "timestamp": "2023-11-03T12:00:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T08:23:01.478071",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "advice_type": "sip_recommendation",
+      "primary_recommendation": "Based on your \u20b940,000 monthly surplus and moderate risk tolerance, a recommended SIP amount would be around \u20b912,000 to \u20b916,000 per month.",
+      "clarifying_questions": [
+        "What are your specific financial goals or timelines for these investments?",
+        "Do you have any existing investments or savings that should be considered?"
+      ],
+      "personalized_suggestions": {
+        "recommended_amount": "\u20b912,000 to \u20b916,000",
+        "rationale": "This range utilizes 30% to 40% of your surplus, balancing savings and opportunities for growth while managing risk.",
+        "alternatives": [
+          "Consider allocating a portion towards conservative debt funds for stability.",
+          "If you foresee large expenses, you might retain more in liquid assets."
+        ]
+      },
+      "risk_assessment": "medium",
+      "next_steps": [
+        "Set up a SIP account with a trusted brokerage or financial institution.",
+        "Review and adjust your SIP periodically in line with financial goals or life changes.",
+        "Monitor the performance regularly to ensure alignment with risk tolerance and goals."
+      ]
+    },
+    "metadata": {
+      "agent_name": "Advisor Agent",
+      "timestamp": "2023-11-03T12:00:00Z"
+    }
+  },
+  "test_passed": true
+}

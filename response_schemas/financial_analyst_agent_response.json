@@ -1,0 +1,84 @@
+{
+  "agent_name": "Financial Analyst Agent",
+  "agent_id": "6985a3ede17e33c11eed1b5a",
+  "agent_purpose": "financial_analysis",
+  "description": "Real-time financial health assessment with ratio validation and risk flagging",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "health_score": "number",
+      "ratio_analysis": {
+        "income_to_expense": "string",
+        "savings_rate": "string",
+        "debt_to_income": "string"
+      },
+      "risk_flags": [
+        "string"
+      ],
+      "opportunity_alerts": [
+        "string"
+      ],
+      "recommendations": [
+        "string"
+      ]
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "health_score": 85,
+      "ratio_analysis": {
+        "income_to_expense": "56.25%",
+        "savings_rate": "27.5%",
+        "debt_to_income": "0%"
+      },
+      "risk_flags": [
+        "none identified"
+      ],
+      "opportunity_alerts": [
+        "Dining out expense reduction of \u20b95,000"
+      ],
+      "recommendations": [
+        "Consider allocating the \u20b95,000 dining out savings towards a high-yield savings account or investment vehicle to capitalize on compound interest.",
+        "Review investment portfolio to ensure diversification and alignment with financial goals."
+      ]
+    },
+    "metadata": {
+      "agent_name": "Financial Analyst Agent",
+      "timestamp": "2023-10-05T14:48:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T08:22:38.930023",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "health_score": 85,
+      "ratio_analysis": {
+        "income_to_expense": "56.25%",
+        "savings_rate": "27.5%",
+        "debt_to_income": "0%"
+      },
+      "risk_flags": [
+        "none identified"
+      ],
+      "opportunity_alerts": [
+        "Dining out expense reduction of \u20b95,000"
+      ],
+      "recommendations": [
+        "Consider allocating the \u20b95,000 dining out savings towards a high-yield savings account or investment vehicle to capitalize on compound interest.",
+        "Review investment portfolio to ensure diversification and alignment with financial goals."
+      ]
+    },
+    "metadata": {
+      "agent_name": "Financial Analyst Agent",
+      "timestamp": "2023-10-05T14:48:00Z"
+    }
+  },
+  "test_passed": true
+}

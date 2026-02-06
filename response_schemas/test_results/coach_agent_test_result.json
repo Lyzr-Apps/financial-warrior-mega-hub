@@ -1,0 +1,25 @@
+{
+  "agent_name": "Coach Agent",
+  "agent_id": "6985a405e17e33c11eed1b5d",
+  "test_message": "User has been staring at the Term Insurance toggle for 45 seconds without clicking it. They seem hesitant. Provide encouragement.",
+  "expected_purpose": "Provides behavioral nudges and motivation",
+  "timestamp": "2026-02-06T08:22:50.076851",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "message_type": "encouragement",
+      "primary_message": "You're doing great! Taking a moment to consider your options is a positive step toward securing your future.",
+      "behavioral_insight": "hesitation detected due to prolonged viewing of the Term Insurance toggle",
+      "suggested_action": "Take a deep breath and consider the benefits of having coverage. If you need more time, reviewing information about term insurance might help.",
+      "motivation_level": "medium",
+      "emoji_tone": "\ud83c\udf1f"
+    },
+    "metadata": {
+      "agent_name": "Coach Agent",
+      "timestamp": "ISO 8601 format"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"message_type\": \"encouragement\",\n    \"primary_message\": \"You're doing great! Taking a moment to consider your options is a positive step toward securing your future.\",\n    \"behavioral_insight\": \"hesitation detected due to prolonged viewing of the Term Insurance toggle\",\n    \"suggested_action\": \"Take a deep breath and consider the benefits of having coverage. If you need more time, reviewing information about term insurance might help.\",\n    \"motivation_level\": \"medium\",\n    \"emoji_tone\": \"\ud83c\udf1f\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Coach Agent\",\n    \"timestamp\": \"ISO 8601 format\"\n  }\n}"
+}

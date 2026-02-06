@@ -1,0 +1,81 @@
+{
+  "agent_name": "Educator Agent",
+  "agent_id": "6985a41bb37fff3a03c07c72",
+  "agent_purpose": "financial_education",
+  "description": "Adaptive financial education with jargon-busting and progressive learning",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "lesson_type": "string",
+      "title": "string",
+      "simple_explanation": "string",
+      "detailed_explanation": "string",
+      "key_takeaways": [
+        "string"
+      ],
+      "related_concepts": [
+        "string"
+      ],
+      "literacy_level": "string",
+      "mastery_check": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "lesson_type": "jargon_buster",
+      "title": "Understanding SIP",
+      "simple_explanation": "SIP stands for Systematic Investment Plan. It's a way to invest a fixed amount of money regularly in mutual funds.",
+      "detailed_explanation": "A Systematic Investment Plan (SIP) is a method of investing in mutual funds where you invest a specific sum at regular intervals, such as monthly or quarterly. This approach allows you to build wealth over time without having to invest a large sum at once. It also helps reduce the impact of market volatility, thanks to the concept of rupee cost averaging.",
+      "key_takeaways": [
+        "SIP is a structured way to invest in mutual funds.",
+        "Consistent investing helps in building wealth over time.",
+        "It reduces investment risk through rupee cost averaging."
+      ],
+      "related_concepts": [
+        "mutual funds",
+        "rupee cost averaging",
+        "investment strategies"
+      ],
+      "literacy_level": "beginner",
+      "mastery_check": "What does SIP stand for and how does it help in investing?"
+    },
+    "metadata": {
+      "agent_name": "Educator Agent",
+      "timestamp": "ISO 8601 format"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T08:22:55.106368",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "lesson_type": "jargon_buster",
+      "title": "Understanding SIP",
+      "simple_explanation": "SIP stands for Systematic Investment Plan. It's a way to invest a fixed amount of money regularly in mutual funds.",
+      "detailed_explanation": "A Systematic Investment Plan (SIP) is a method of investing in mutual funds where you invest a specific sum at regular intervals, such as monthly or quarterly. This approach allows you to build wealth over time without having to invest a large sum at once. It also helps reduce the impact of market volatility, thanks to the concept of rupee cost averaging.",
+      "key_takeaways": [
+        "SIP is a structured way to invest in mutual funds.",
+        "Consistent investing helps in building wealth over time.",
+        "It reduces investment risk through rupee cost averaging."
+      ],
+      "related_concepts": [
+        "mutual funds",
+        "rupee cost averaging",
+        "investment strategies"
+      ],
+      "literacy_level": "beginner",
+      "mastery_check": "What does SIP stand for and how does it help in investing?"
+    },
+    "metadata": {
+      "agent_name": "Educator Agent",
+      "timestamp": "ISO 8601 format"
+    }
+  },
+  "test_passed": true
+}

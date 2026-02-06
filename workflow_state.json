@@ -1,0 +1,82 @@
+{
+  "workflow_name": "MoneyCommander Financial Education App",
+  "created_at": "2026-02-06",
+  "knowledge_base": {
+    "rag_id": "6985a3e0de7de278e55d2893",
+    "rag_name": "moneycommanderknowledgebasec7bl",
+    "description": "Financial knowledge base containing benchmarks, behavioral finance principles, financial concepts, advice frameworks, and regulatory guidelines"
+  },
+  "agents": [
+    {
+      "agent_id": "6985a453301c62c7ca2c7de1",
+      "name": "The Commander",
+      "type": "manager",
+      "description": "Orchestrates user journey, tracks current screen and progress, maintains user profile (risk tolerance, emotional state, literacy level), decides which specialist to activate, coordinates handoffs, updates Financial Power Level based on all agent inputs",
+      "managed_agents": [
+        "6985a3ede17e33c11eed1b5a",
+        "6985a405e17e33c11eed1b5d",
+        "6985a41bb37fff3a03c07c72",
+        "6985a434e2c0086a4fc43bd5"
+      ]
+    },
+    {
+      "agent_id": "6985a3ede17e33c11eed1b5a",
+      "name": "Financial Analyst Agent",
+      "type": "sub_agent",
+      "description": "Provides real-time input analysis and financial health assessment - validates income-to-expense ratios, flags risks, calculates opportunity alerts",
+      "has_knowledge_base": true
+    },
+    {
+      "agent_id": "6985a405e17e33c11eed1b5d",
+      "name": "Coach Agent",
+      "type": "sub_agent",
+      "description": "Delivers behavioral nudges, emotional support, and motivation - detects hesitation patterns, celebrates progress, provides reassurance",
+      "has_knowledge_base": true
+    },
+    {
+      "agent_id": "6985a41bb37fff3a03c07c72",
+      "name": "Educator Agent",
+      "type": "sub_agent",
+      "description": "Provides adaptive educational content and jargon-busting - delivers screen-specific mini-lessons, adjusts explanations based on literacy level",
+      "has_knowledge_base": true
+    },
+    {
+      "agent_id": "6985a434e2c0086a4fc43bd5",
+      "name": "Advisor Agent",
+      "type": "sub_agent",
+      "description": "Guides conversational decision-making at key points - asks clarifying questions, provides personalized recommendations for SIPs, insurance, and risk allocation",
+      "has_knowledge_base": true
+    }
+  ],
+  "response_schemas": [
+    {
+      "agent_name": "The Commander",
+      "schema_file": "response_schemas/the_commander_response.json",
+      "purpose": "journey_orchestration"
+    },
+    {
+      "agent_name": "Financial Analyst Agent",
+      "schema_file": "response_schemas/financial_analyst_agent_response.json",
+      "purpose": "financial_analysis"
+    },
+    {
+      "agent_name": "Coach Agent",
+      "schema_file": "response_schemas/coach_agent_response.json",
+      "purpose": "behavioral_coaching"
+    },
+    {
+      "agent_name": "Educator Agent",
+      "schema_file": "response_schemas/educator_agent_response.json",
+      "purpose": "financial_education"
+    },
+    {
+      "agent_name": "Advisor Agent",
+      "schema_file": "response_schemas/advisor_agent_response.json",
+      "purpose": "financial_advice"
+    }
+  ],
+  "total_agents": 5,
+  "manager_agents": 1,
+  "sub_agents": 4,
+  "status": "complete"
+}

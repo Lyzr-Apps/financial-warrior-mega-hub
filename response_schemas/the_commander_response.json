@@ -1,0 +1,59 @@
+{
+  "agent_name": "The Commander",
+  "agent_id": "6985a453301c62c7ca2c7de1",
+  "agent_purpose": "journey_orchestration",
+  "description": "Orchestrates user journey and coordinates specialist agent handoffs with strict JSON output",
+  "response_schema": {
+    "status": "string (success|error)",
+    "result": {
+      "current_screen": "string (screen_1|screen_2|screen_3|screen_4|screen_5)",
+      "financial_analysis": {
+        "health_score": "number (0-100)",
+        "surplus": "string (numeric value)",
+        "insights": "string"
+      },
+      "handoff_to": "string (Financial Analyst Agent|Coach Agent|Educator Agent|Advisor Agent|none)",
+      "next_screen_suggestion": "string (screen_1|screen_2|screen_3|screen_4|screen_5|stay)",
+      "user_profile_update": {
+        "risk_tolerance": "string (conservative|moderate|aggressive)",
+        "emotional_state": "string (confident|hesitant|anxious|excited)",
+        "literacy_level": "string (beginner|intermediate|advanced)"
+      },
+      "power_level_update": "number (0-100)",
+      "message": "string"
+    },
+    "metadata": {
+      "timestamp": "string (ISO8601)",
+      "agent_name": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "current_screen": "screen_1",
+      "financial_analysis": {
+        "health_score": 70,
+        "surplus": "40000",
+        "insights": "Recovered a surplus of ₹40,000 after addressing leaks. The income-to-expense ratio is favorable."
+      },
+      "handoff_to": "Coach Agent",
+      "next_screen_suggestion": "screen_2",
+      "user_profile_update": {
+        "risk_tolerance": "moderate",
+        "emotional_state": "hesitant",
+        "literacy_level": "beginner"
+      },
+      "power_level_update": 20,
+      "message": "Great job on completing the Intel! You've unlocked a surplus of ₹40,000. Let's address any concerns and build your financial safety shield next."
+    },
+    "metadata": {
+      "timestamp": "2023-11-24T07:45:00Z",
+      "agent_name": "The Commander"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T08:24:29.436644",
+  "test_message_used": "User just completed Screen 1 (The Intel) with monthly income ₹80,000, fixed bills ₹45,000, and recovered ₹5,000 from plugging leaks. They seem hesitant about moving to Screen 2 (The Shield). What should happen next?",
+  "validation_status": "PASSED",
+  "is_valid_json": true
+}

@@ -1,0 +1,55 @@
+{
+  "agent_name": "Coach Agent",
+  "agent_id": "6985a405e17e33c11eed1b5d",
+  "agent_purpose": "behavioral_coaching",
+  "description": "Behavioral nudges and emotional support with hesitation detection",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "message_type": "string",
+      "primary_message": "string",
+      "behavioral_insight": "string",
+      "suggested_action": "string",
+      "motivation_level": "string",
+      "emoji_tone": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "message_type": "encouragement",
+      "primary_message": "You're doing great! Taking a moment to consider your options is a positive step toward securing your future.",
+      "behavioral_insight": "hesitation detected due to prolonged viewing of the Term Insurance toggle",
+      "suggested_action": "Take a deep breath and consider the benefits of having coverage. If you need more time, reviewing information about term insurance might help.",
+      "motivation_level": "medium",
+      "emoji_tone": "\ud83c\udf1f"
+    },
+    "metadata": {
+      "agent_name": "Coach Agent",
+      "timestamp": "ISO 8601 format"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T08:22:50.077276",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "message_type": "encouragement",
+      "primary_message": "You're doing great! Taking a moment to consider your options is a positive step toward securing your future.",
+      "behavioral_insight": "hesitation detected due to prolonged viewing of the Term Insurance toggle",
+      "suggested_action": "Take a deep breath and consider the benefits of having coverage. If you need more time, reviewing information about term insurance might help.",
+      "motivation_level": "medium",
+      "emoji_tone": "\ud83c\udf1f"
+    },
+    "metadata": {
+      "agent_name": "Coach Agent",
+      "timestamp": "ISO 8601 format"
+    }
+  },
+  "test_passed": true
+}

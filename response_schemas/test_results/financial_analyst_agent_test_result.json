@@ -1,0 +1,35 @@
+{
+  "agent_name": "Financial Analyst Agent",
+  "agent_id": "6985a3ede17e33c11eed1b5a",
+  "test_message": "User has monthly income of \u20b980,000, fixed bills of \u20b945,000, and just plugged dining out leak saving \u20b95,000. Calculate their investment surplus and provide insights.",
+  "expected_purpose": "Provides financial analysis and calculations",
+  "timestamp": "2026-02-06T08:22:38.929618",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "health_score": 85,
+      "ratio_analysis": {
+        "income_to_expense": "56.25%",
+        "savings_rate": "27.5%",
+        "debt_to_income": "0%"
+      },
+      "risk_flags": [
+        "none identified"
+      ],
+      "opportunity_alerts": [
+        "Dining out expense reduction of \u20b95,000"
+      ],
+      "recommendations": [
+        "Consider allocating the \u20b95,000 dining out savings towards a high-yield savings account or investment vehicle to capitalize on compound interest.",
+        "Review investment portfolio to ensure diversification and alignment with financial goals."
+      ]
+    },
+    "metadata": {
+      "agent_name": "Financial Analyst Agent",
+      "timestamp": "2023-10-05T14:48:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"health_score\": 85,\n    \"ratio_analysis\": {\n      \"income_to_expense\": \"56.25%\",\n      \"savings_rate\": \"27.5%\",\n      \"debt_to_income\": \"0%\"  },\n    \"risk_flags\": [\"none identified\"],\n    \"opportunity_alerts\": [\"Dining out expense reduction of \u20b95,000\"],\n    \"recommendations\": [\n      \"Consider allocating the \u20b95,000 dining out savings towards a high-yield savings account or investment vehicle to capitalize on compound interest.\",\n      \"Review investment portfolio to ensure diversification and alignment with financial goals.\"\n    ]\n  },\n  \"metadata\": {\n    \"agent_name\": \"Financial Analyst Agent\",\n    \"timestamp\": \"2023-10-05T14:48:00Z\"\n  }\n}"
+}
